@@ -1,0 +1,24 @@
+{
+  "name": "cinq-angularjs",
+  "version": "0.0.1",
+  "description": "An app to present the resulting data from the REST service",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./www -a localhost -p 8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-http-proxy": "^0.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-minify-html": "^1.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2"
+  }
+}

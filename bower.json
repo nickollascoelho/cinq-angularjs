@@ -1,0 +1,22 @@
+{
+  "name": "cinq-angularjs",
+  "authors": [
+    "Nickollas Coelho <nickollas.coelho@gmail.com>"
+  ],
+  "description": "An app to present the resulting data from the REST service.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
