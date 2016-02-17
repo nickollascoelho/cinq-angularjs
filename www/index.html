@@ -17,28 +17,37 @@
 
     <div class="container" ng-controller="PeopleCtrl as vm">
 
-      <header class="">
-          <h1 class="">People</h1>
-      </header>
+      <div class="card-table">
+        <header class="card-header">
+            <h1 class="card-title">People</h1>
+        </header>
 
-      <main class="">
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="col-numeric">ID</th>
-              <th class="">Name</th>
-              <th class="">Disclosable Info</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="person in vm.people track by person.id">
-              <td class="col-numeric">{{ person.id }}</td>
-              <td class="">{{ person.name }}</td>
-              <td class="">{{ person.disclosableInfo }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </main>
+        <main class="">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="column column-numeric">ID</th>
+                <th class="column">Name</th>
+                <th class="column">Disclosable Info</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="person in vm.people track by person.id">
+                <td class="column column-numeric">{{ person.id }}</td>
+                <td class="column">{{ person.name }}</td>
+                <td class="column">{{ person.disclosableInfo }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>1 - 10 of 10</td>
+              </tr>
+            </tfoot>
+          </table>
+        </main>
+      </div>
 
     </div>
 
