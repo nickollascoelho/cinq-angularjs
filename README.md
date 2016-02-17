@@ -14,7 +14,7 @@ An app to present the resulting data from a REST service.
 #### How to RUN using [docker](https://docs.docker.com/engine/installation/):
 * `docker build -t nickollascoelho/cinq-angularjs .`
 * `docker run -p 49876:3000 -d nickollascoelho/cinq-angularjs`
-* `Access localhost:49876 (Linux) or 192.168.99.100:49876 (maybe) if you are using docker-machine (OSX and Windows)`
+* `Access localhost:49876 (Linux) or 192.168.99.100:49876 (OSX and Windows)`
 
 #### How to RUN using npm: (Incomplete)
 * `npm install`
