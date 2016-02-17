@@ -13,8 +13,7 @@
       };
 
       function xhrFailed(error) {
-        console.log(error);
-        //$log.error('XHR Failed.' + error);
+        $log.error('XHR Failed.' + error);
       }
 
       function xhrComplete(response) {
