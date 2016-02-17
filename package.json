@@ -6,17 +6,17 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "if $BUILD_ASSETS; then npm run build-assets; fi",
-    "build-assets": "bower install && gulp clean && gulp build"
+    "postinstall": "bower install && gulp clean && gulp build",
+    "build-assets":
   },
   "author": "Nickollas Aguiar Coelho <nickollas.coelho@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bower": "^1.7.7",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0"
   },
   "devDependencies": {
-    "bower": "^1.7.7",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.1",
     "gulp-concat": "^2.6.0",
