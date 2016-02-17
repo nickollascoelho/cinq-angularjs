@@ -1,4 +1,4 @@
-var PRODUCTION = false,
+var PRODUCTION = process.env.NODE_ENV || false,
     PORT = process.env.PORT || 3000;
 
 var express  = require('express'),
