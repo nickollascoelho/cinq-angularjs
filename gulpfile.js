@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     uglify = require ('gulp-uglify'),
     rename = require('gulp-rename'),
     minifyhtml = require ('gulp-minify-html'),
+    htmlreplace = require('gulp-html-replace'),
     cssnano = require('gulp-cssnano'),
     jasmine = require('gulp-jasmine');
 
