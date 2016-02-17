@@ -1,4 +1,4 @@
-var PRODUCTION = process.env.NPM_CONFIG_PRODUCTION || false,
+var PRODUCTION = !!process.env.NPM_CONFIG_PRODUCTION,
     PORT = process.env.PORT || 3000;
 
 var express  = require('express'),
