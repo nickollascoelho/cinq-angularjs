@@ -1,4 +1,4 @@
-var PRODUCTION = !!!process.env.NPM_CONFIG_PRODUCTION,
+var NODE_ENV = process.env.NODE_ENV || 'staging',
     PORT = process.env.PORT || 3000;
 
 var express  = require('express'),
@@ -47,7 +47,7 @@ app.get('/api/people', function(req, res) {
    res.send(generateFakeList());
 });
 
-var staticDir = PRODUCTION ? '/build' : '/www';
+var staticDir = NODE_ENV === 'production' ? '/build' : '/www';
 
 console.log('Using ' + staticDir);
 app.use(express.static(__dirname + staticDir));
