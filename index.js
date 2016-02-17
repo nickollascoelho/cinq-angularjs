@@ -1,5 +1,5 @@
 var PRODUCTION = false,
-    PORT = 3000;
+    PORT = process.env.PORT || 3000;
 
 var express  = require('express'),
     app      = express(),
