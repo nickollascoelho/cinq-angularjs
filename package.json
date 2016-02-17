@@ -6,7 +6,7 @@
   "repository": "https://github.com/nickollascoelho/cinq-angularjs",
   "scripts": {
     "start": "node index.js",
-    "test": "jshint www/app/people/people.controller.js", /* Need something better */
+    "test": "jshint www/app/people/people.controller.js",
     "postinstall": "bower install && gulp clean && gulp build"
   },
   "author": "Nickollas Aguiar Coelho <nickollas.coelho@gmail.com>",
