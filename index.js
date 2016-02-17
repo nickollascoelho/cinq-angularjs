@@ -47,7 +47,7 @@ app.get('/api/people', function(req, res) {
    res.send(generateFakeList());
 });
 
-var staticDir = NODE_ENV === 'production' ? '/build' : '/www';
+var staticDir = (NODE_ENV === 'production') ? '/build' : '/www';
 
 console.log('Using ' + staticDir);
 app.use(express.static(__dirname + staticDir));
