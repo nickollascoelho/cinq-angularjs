@@ -45,7 +45,7 @@
               <tr>
                 <td></td>
                 <td></td>
-                <td>1 - 10 of 10</td>
+                <td>1 - 10 of {{ vm.people.length }}</td>
               </tr>
             </tfoot>
           </table>
@@ -55,7 +55,7 @@
     </div>
 
     <!-- build:js -->
-    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/services/data.service.js"></script>
     <script src="app/people/people.controller.js"></script>
