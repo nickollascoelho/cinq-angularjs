@@ -49,7 +49,7 @@ app.get('/api/people', function(req, res) {
 
 var staticDir = PRODUCTION ? '/build' : '/www';
 
-console.log('Using ' + staticDir);
+console.log('Using ' + staticDir + ' ' + PRODUCTION + ' ' + process.env.NPM_CONFIG_PRODUCTION);
 app.use(express.static(__dirname + staticDir));
 
 console.log('Listening to port ' + PORT);
