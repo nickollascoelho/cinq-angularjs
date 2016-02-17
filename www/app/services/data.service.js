@@ -23,7 +23,7 @@
       }
 
       function getPeople() {
-        return $http.get('/rest/people')
+        return $http.get('/api/people')
           .then(xhrComplete)
           .catch(xhrFailed);
       }
