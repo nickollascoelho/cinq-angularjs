@@ -1,4 +1,4 @@
-var PRODUCTION = process.env.NPM_CONFIG_PRODUCTION,
+var PRODUCTION = !!!process.env.NPM_CONFIG_PRODUCTION,
     PORT = process.env.PORT || 3000;
 
 var express  = require('express'),
@@ -49,7 +49,7 @@ app.get('/api/people', function(req, res) {
 
 var staticDir = PRODUCTION ? '/build' : '/www';
 
-console.log('Using ' + staticDir + ' ' + PRODUCTION + ' ' + process.env.NPM_CONFIG_PRODUCTION);
+console.log('Using ' + staticDir);
 app.use(express.static(__dirname + staticDir));
 
 console.log('Listening to port ' + PORT);
