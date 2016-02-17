@@ -74,7 +74,7 @@ th.column:hover {
 }
 
 .column:nth-child(2) {
-  padding: 0 24px 0 56px;
+  padding: 0 56px 0 24px;
 }
 
 .column:last-child {
