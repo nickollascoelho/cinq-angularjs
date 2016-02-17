@@ -117,23 +117,3 @@ th.column:hover {
   font-weight: normal;
 }
 
-/* Wide VGA */
-@media (min-width: 768px) and (max-width: 1259px)  {
-  .container {
-    width: 738px;
-  }
-}
-
-/* HD */
-@media (min-width: 1260) and (max-width: 1919px) {
-  .container {
-    width: 1260px;
-  }
-}
-
-/* Full HD */
-@media (min-width: 1920px) {
-  .container {
-    width: 1920px;
-  }
-}
