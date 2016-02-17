@@ -1,5 +1,5 @@
 An app to present the resulting data from a REST service.
-> Live [demo](http://cinq-angularjs.herokuapp.com/) http://cinq-angularjs.herokuapp.com/
+> [Live demo](http://cinq-angularjs.herokuapp.com/)
 
 [![Build Status](https://travis-ci.org/nickollascoelho/cinq-angularjs.svg?branch=master)](https://travis-ci.org/nickollascoelho/cinq-angularjs)
 [![Code Climate](https://codeclimate.com/github/nickollascoelho/cinq-angularjs/badges/gpa.svg)](https://codeclimate.com/github/nickollascoelho/cinq-angularjs)
