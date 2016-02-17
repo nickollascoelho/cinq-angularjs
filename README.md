@@ -1,9 +1,7 @@
-[![Build Status](https://travis-ci.org/nickollascoelho/cinq-angularjs.svg?branch=master)](https://travis-ci.org/nickollascoelho/cinq-angularjs)
-
-# CINQ AngularJS
-
 An app to present the resulting data from a REST service.
-[demo](http://cinq-angularjs.herokuapp.com/)
+> Live [demo](http://cinq-angularjs.herokuapp.com/) http://cinq-angularjs.herokuapp.com/
+
+[![Build Status](https://travis-ci.org/nickollascoelho/cinq-angularjs.svg?branch=master)](https://travis-ci.org/nickollascoelho/cinq-angularjs)
 
 #### Built with:
 * [node.js](http://www.nodejs.org/)
