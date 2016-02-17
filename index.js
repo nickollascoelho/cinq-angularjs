@@ -1,15 +1,9 @@
+var PRODUCTION = false,
+    PORT = 3000;
+
 var express  = require('express'),
     app      = express(),
     proxy    = require('express-http-proxy');
-
-app.use('/rest', proxy('localhost:8090', {
-  filter: function(req, res) {
-    return req.method === 'GET';
-  },
-  forwardPath: function(req, res) {
-    return '/rest' + require('url').parse(req.url).path;
-  }
-}));
 
 var generateFakeList = function generateFakeList() {
   var name = ["Adam", "Abe", "Maria", "Rose", "Mario", "Luigi"];
@@ -36,13 +30,24 @@ var generateFakeList = function generateFakeList() {
   return people;
 };
 
+/**
+  * Proxy to redirect requests in /rest/people to the Java server running on port 8090
+  * and avoid CORS problems.
+  */
+app.use('/rest', proxy('localhost:8090', {
+  filter: function(req, res) {
+    return req.method === 'GET';
+  },
+  forwardPath: function(req, res) {
+    return '/rest' + require('url').parse(req.url).path;
+  }
+}));
+
 app.get('/api/people', function(req, res) {
    res.send(generateFakeList());
 });
 
-app.use(express.static(__dirname + '/www'));
-
-var PORT = 3000;
+app.use(express.static(__dirname + (PRODUCTION ? '/build' : '/www')));
 
 console.log('Listening to port ' + PORT);
 app.listen(PORT);
