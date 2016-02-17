@@ -2,6 +2,8 @@ An app to present the resulting data from a REST service.
 > Live [demo](http://cinq-angularjs.herokuapp.com/) http://cinq-angularjs.herokuapp.com/
 
 [![Build Status](https://travis-ci.org/nickollascoelho/cinq-angularjs.svg?branch=master)](https://travis-ci.org/nickollascoelho/cinq-angularjs)
+[![Code Climate](https://codeclimate.com/github/nickollascoelho/cinq-angularjs/badges/gpa.svg)](https://codeclimate.com/github/nickollascoelho/cinq-angularjs)
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/669ab8d171664afc940003a639b9bf68)](https://www.codacy.com/app/nickollas-coelho/cinq-angularjs)
 
 #### Built with:
 * [node.js](http://www.nodejs.org/)
