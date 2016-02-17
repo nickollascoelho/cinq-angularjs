@@ -17,7 +17,7 @@
       }
 
       function xhrComplete(response) {
-        console.log(response);
+        $log.info(response);
         return response.data;
       }
 
