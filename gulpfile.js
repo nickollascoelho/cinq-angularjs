@@ -52,8 +52,8 @@ gulp.task('js', function() {
 gulp.task('html', function() {
   return gulp.src('www/index.html')
   .pipe(htmlreplace({
-        'css': 'assets/css/main.min.css',
-        'js': ['assets/js/angular.min.js', 'assets/js/main.min.js']
+        'css': ['assets/css/normalize.min.css', 'assets/css/main.min.css'],
+        'js':  ['assets/js/angular.min.js', 'assets/js/main.min.js']
   }))
   .pipe(minifyhtml())
   .pipe(gulp.dest('build/'));
