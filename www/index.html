@@ -5,36 +5,48 @@
 
     <title>CINQ AngularJS</title>
 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/app.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
   <body>
 
-    <h1>People</h1>
+    <div class="container" ng-controller="PeopleCtrl as vm">
 
-    <div ng-controller="PeopleCtrl as vm">
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Disclosable Info</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="row" ng-repeat="person in vm.people track by person.id">
-            <td>{{ person.id }}</td>
-            <td>{{ person.name }}</td>
-            <td>{{ person.disclosableInfo }}</td>
-          </tr>
-        </tbody>
-      </table>
+      <header class="">
+          <h1 class="">People</h1>
+      </header>
+
+      <main class="">
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="col-numeric">ID</th>
+              <th class="">Name</th>
+              <th class="">Disclosable Info</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="person in vm.people track by person.id">
+              <td class="col-numeric">{{ person.id }}</td>
+              <td class="">{{ person.name }}</td>
+              <td class="">{{ person.disclosableInfo }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+
     </div>
 
     <script src="lib/angular/angular.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/services/data.service.js"></script>
     <script src="app/people/people.controller.js"></script>
+
   </body>
+
 </html>

@@ -1,1 +1,22 @@
+.table tbody tr:hover {
+  background-color: #EEEEEE;
+}
 
+.table tbody {
+  font-family: 'Roboto Regular', sans-serif;
+  color: #212121;
+}
+
+.table thead {
+  font-family: 'Roboto Medium', sans-serif;
+  color: #757575;
+}
+
+.table thead tr th,
+.table thead tr td {
+  text-align: left;
+}
+
+.col-numeric {
+  text-align: right;
+}
