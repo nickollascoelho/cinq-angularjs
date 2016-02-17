@@ -14,8 +14,16 @@ gulp.task('clean', function () {
  .pipe(clean());
 });
 
+gulp.task('normalizeCss', function() {
+  return gulp.src('www/assets/css/normalize.css')
+  .pipe(concat('normalize.css'))
+  .pipe(cssnano())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('build/assets/css/'));
+});
+
 gulp.task('css', function() {
-  return gulp.src('www/lib/assets/css/*.css')
+  return gulp.src('www/assets/css/app.css')
   .pipe(concat('main.css'))
   .pipe(cssnano())
   .pipe(rename({suffix: '.min'}))
@@ -51,4 +59,4 @@ gulp.task('html', function() {
   .pipe(gulp.dest('build/'));
 });
 
-gulp.task('build', ['angular', 'js', 'css', 'html']);
+gulp.task('build', ['angular', 'js', 'normalizeCss', 'css', 'html']);

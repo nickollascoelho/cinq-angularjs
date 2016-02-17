@@ -47,7 +47,10 @@ app.get('/api/people', function(req, res) {
    res.send(generateFakeList());
 });
 
-app.use(express.static(__dirname + (PRODUCTION ? '/build' : '/www')));
+var staticDir = PRODUCTION ? '/build' : '/www';
+
+console.log('Using ' + staticDir);
+app.use(express.static(__dirname + staticDir));
 
 console.log('Listening to port ' + PORT);
 app.listen(PORT);
